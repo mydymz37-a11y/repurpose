@@ -1,0 +1,20 @@
+[auth]
+enabled = true
+providers = ["email"]
+
+[db.tables.projects]
+read = "own"
+write = "own"
+
+[db.tables.user_licenses]
+read = "own"
+write = "own"
+
+[db.tables.user_ai_keys]
+read = "own"
+write = "own"
+
+[[secret]]
+name = "AI_KEYS_ENCRYPTION_SECRET"
+required = false
+description = "AES-256-GCM encryption key for customer-owned AI provider keys. Set a random 64-character hexadecimal secret in the project Setup page."

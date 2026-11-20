@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS projects_user_updated_idx ON projects (user_id, updated_at DESC)
